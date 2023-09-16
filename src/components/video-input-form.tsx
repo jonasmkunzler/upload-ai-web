@@ -107,11 +107,9 @@ export default function VideoInputForm(props:VideoInputFormProps) {
     
     console.log(prompt);
     
-
     await api.post(`/videos/${videoId}/transcription`, {
       prompt,
     })
-
 
     console.log('Finalizou');
     setStatus('success')
